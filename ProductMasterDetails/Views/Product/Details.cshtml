@@ -1,0 +1,50 @@
+﻿@model ProductMasterDetails.Models.Product
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    
+    <hr />
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Product Details</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">  @Html.DisplayNameFor(model => model.Name)</th>
+                <td> @Html.DisplayFor(model => model.Name)</td>
+            </tr>
+            <tr>
+                <th scope="row"> @Html.DisplayNameFor(model => model.Description)</th>
+                <td> @Html.DisplayFor(model => model.Description)</td>
+            </tr>
+            <tr>
+                <th scope="row"> @Html.DisplayNameFor(model => model.Category)</th>
+                <td> @Html.DisplayFor(model => model.Category)</td>
+            </tr>
+            <tr>
+                <th scope="row"> @Html.DisplayNameFor(model => model.Cost)</th>
+                <td> @Html.DisplayFor(model => model.Cost)</td>
+            </tr>
+            <tr>
+                <th scope="row"> @Html.DisplayNameFor(model => model.Price)</th>
+                <td> @Html.DisplayFor(model => model.Price)</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</div>
+<div>
+  
+    <a asp-action="Index">Back to List</a>
+</div>
